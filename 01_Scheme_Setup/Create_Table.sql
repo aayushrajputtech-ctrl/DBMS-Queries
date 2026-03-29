@@ -1,0 +1,18 @@
+--Create Department Table 
+CREATE TABLE DEPARTMENT(
+    DEPTNO INT(2) PRIMARY KEY,
+    DNAME VARCHAR(15) NOT NULL
+);
+
+--Create Employee Table
+CREATE TABLE EMPLOYEE(
+    EMPNO INT(4) PRIMARY KEY,
+    ENAME VARCHAR(20) NOT NULL,
+    JOB VARCHAR(20),
+    MGR INT(4),
+    HIREDATE DATE,
+    SAL INT(10),
+    COMM INT(7),
+    DEPTNO INT(2),
+    FOREIGN KEY (deptno) REFERENCES department(deptno)
+);
