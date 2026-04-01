@@ -24,7 +24,7 @@ FROM EMPLOYEE
 WHERE JOB = 'CLERK';
 
 --Q6: Find all managers not in department 30.
-SELECT * FROM EMPLOYEE 
+SELECT * FROM EMPLOYEE;
 WHERE JOB = 'MANAGER'
 AND DEPTNO <> 30;
 
